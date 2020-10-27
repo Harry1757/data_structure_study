@@ -4,9 +4,24 @@ class TreeNode {
     this.children = [];
   }
 
-  insertNode(value) {}
+  insertNode(value) {
+    let tree = new TreeNode(value)
 
-  contains(value) {}
+    this.children.push(tree)
+  }
+
+  contains(value) {
+    if(this.value === value){
+      return true
+    }else{
+      for(let el of this.children){
+        if(el.contains(value)){
+          return true;
+        }
+      }
+      return false;
+    }
+ }
 }
 
 module.exports = TreeNode;

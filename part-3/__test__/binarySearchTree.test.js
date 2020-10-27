@@ -42,5 +42,5 @@ describe('binarySearchTree', function() {
     rootNode.insert(10);
     rootNode.inorder(func);
     expect(array).toEqual([2, 3, 5, 6, 8, 10]);
-  });
+  });3,4
 });

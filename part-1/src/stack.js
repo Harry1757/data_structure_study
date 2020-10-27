@@ -18,9 +18,9 @@ class Stack {
     if(this.top < 1){
       return;
     }
-    let result = this.storage[this.top -1]
-    delete this.storage[this.top -1]
     this.top--
+    let result = this.storage[this.top]
+    delete this.storage[this.top]
     return result
   }
 }
